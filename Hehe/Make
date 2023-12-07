@@ -1,0 +1,17 @@
+my_robot := ./src/test(please_work).py
+
+
+computer_install:
+	bash ./scripts/computer_install.sh
+
+roborio_install:
+	bash ./scripts/roborio_install.sh
+
+sim:
+	py -3 $(my_robot) sim
+
+deploy:
+	py -3 $(my_robot) deploy
+
+debug:
+	py -3 $(my_robot) deploy --nc
